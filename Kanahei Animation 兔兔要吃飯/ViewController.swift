@@ -19,8 +19,11 @@ class ViewController: UIViewController {
         let gradientView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 926))
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = gradientView.bounds
-        gradientLayer.colors = [UIColor.orange.cgColor, UIColor.blue.cgColor]
-        gradientView.layer.addSublayer(gradientLayer)
+        gradientLayer.colors = [
+            UIColor(red: 1, green: 113/255, blue: 154/155, alpha: 1).cgColor,
+            UIColor(red: 1, green: 169/255, blue: 159/155, alpha: 1).cgColor,
+            UIColor(red: 1, green: 226/255, blue: 159/255, alpha: 1).cgColor
+        ]
         view.layer.addSublayer(gradientLayer)
         
         // 載入動畫
